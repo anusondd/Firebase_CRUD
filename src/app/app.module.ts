@@ -14,7 +14,7 @@ import { EditShoppingListPage } from '../pages/edit-shopping-list/edit-shopping-
 
 
 @NgModule({
-  declarations: [
+  declarations: [ 
     MyApp,
     ShoppingListPage,
     AddShoppingListPage,
@@ -45,3 +45,4 @@ import { EditShoppingListPage } from '../pages/edit-shopping-list/edit-shopping-
   ]
 })
 export class AppModule {}
+//npm install promise-polyfill --save-exact

@@ -8,9 +8,16 @@ import { MyApp } from './app.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { FIREBASE_CREDENTIALS } from './firebase.credentials';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+
+
 import { ShoppingListPage } from '../pages/shopping-list/shopping-list';
 import { AddShoppingListPage } from '../pages/add-shopping-list/add-shopping-list';
 import { EditShoppingListPage } from '../pages/edit-shopping-list/edit-shopping-list';
+import { LoginPage } from '../pages/login/login';
+import { ProfilesPage } from '../pages/profiles/profiles';
+import { HomePage } from '../pages/home/home';
 
 
 @NgModule({
@@ -18,7 +25,10 @@ import { EditShoppingListPage } from '../pages/edit-shopping-list/edit-shopping-
     MyApp,
     ShoppingListPage,
     AddShoppingListPage,
-    EditShoppingListPage
+    EditShoppingListPage,
+    LoginPage,
+    ProfilesPage,
+    HomePage
   ],
   imports: [
     BrowserModule,
@@ -27,6 +37,7 @@ import { EditShoppingListPage } from '../pages/edit-shopping-list/edit-shopping-
     AngularFireModule.initializeApp(FIREBASE_CREDENTIALS),
     // Config FIREBASE_DATABASE
     AngularFireDatabaseModule,
+    AngularFireAuthModule
     
 
   ],
@@ -35,7 +46,10 @@ import { EditShoppingListPage } from '../pages/edit-shopping-list/edit-shopping-
     MyApp,
     ShoppingListPage,
     AddShoppingListPage,
-    EditShoppingListPage
+    EditShoppingListPage,
+    LoginPage,
+    ProfilesPage,
+    HomePage
     
   ],
   providers: [

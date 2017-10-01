@@ -4,7 +4,7 @@ import { AddShoppingListPage } from '../add-shopping-list/add-shopping-list';
 import { FirebaseListObservable, AngularFireDatabase } from 'angularfire2/database';
 import { ShoppingItem } from '../../app/models/shopping-item.interface';
 import { EditShoppingListPage } from '../edit-shopping-list/edit-shopping-list';
-
+import { AngularFireAuth } from 'angularfire2/auth';
 
 @Component({
   selector: 'page-shopping-list',
@@ -29,7 +29,6 @@ export class ShoppingListPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ShoppingListPage');
   }
 
   navagateToAddShoppingList(){

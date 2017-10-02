@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { User } from '../../app/models/user';
 import { AngularFireAuth } from 'angularfire2/auth';
-import { ProfilesPage } from '../profiles/profiles';
 import { HomePage } from '../home/home';
 
 
@@ -45,8 +44,8 @@ export class LoginPage {
 
     this.navCtrl.push('RegisterPage');
   }
-  showForgotPassword(){
-    
+  ForgotPassword(){    
+    this.navCtrl.push('ResetPasswordPage');
   }
 
 }

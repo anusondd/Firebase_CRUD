@@ -45,5 +45,8 @@ export class LoginPage {
 
     this.navCtrl.push('RegisterPage');
   }
+  showForgotPassword(){
+    
+  }
 
 }

@@ -12,23 +12,10 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 
 
 
-import { ShoppingListPage } from '../pages/shopping-list/shopping-list';
-import { AddShoppingListPage } from '../pages/add-shopping-list/add-shopping-list';
-import { EditShoppingListPage } from '../pages/edit-shopping-list/edit-shopping-list';
-import { LoginPage } from '../pages/login/login';
-import { ProfilesPage } from '../pages/profiles/profiles';
-import { HomePage } from '../pages/home/home';
-
 
 @NgModule({
   declarations: [ 
-    MyApp,
-    ShoppingListPage,
-    AddShoppingListPage,
-    EditShoppingListPage,
-    LoginPage,
-    ProfilesPage,
-    HomePage
+    MyApp
   ],
   imports: [
     BrowserModule,
@@ -44,12 +31,6 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    ShoppingListPage,
-    AddShoppingListPage,
-    EditShoppingListPage,
-    LoginPage,
-    ProfilesPage,
-    HomePage
     
   ],
   providers: [

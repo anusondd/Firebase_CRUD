@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, ActionSheetController } from 'ionic-angular';
-import { AddShoppingListPage } from '../add-shopping-list/add-shopping-list';
+import { IonicPage,NavController, NavParams, ActionSheetController } from 'ionic-angular';
 import { FirebaseListObservable, AngularFireDatabase } from 'angularfire2/database';
 import { ShoppingItem } from '../../app/models/shopping-item.interface';
-import { EditShoppingListPage } from '../edit-shopping-list/edit-shopping-list';
-import { AngularFireAuth } from 'angularfire2/auth';
 
+@IonicPage()
 @Component({
   selector: 'page-shopping-list',
   templateUrl: 'shopping-list.html',
@@ -33,7 +31,7 @@ export class ShoppingListPage {
 
   navagateToAddShoppingList(){
 
-    this.navCtrl.push(AddShoppingListPage);
+    this.navCtrl.push('AddShoppingListPage');
   }
 
   selectShoppingItem(shoppingItem){
@@ -43,7 +41,7 @@ export class ShoppingListPage {
         {
           text: 'Edit',
           handler: () =>{
-              this.navCtrl.push(EditShoppingListPage, { shoppingItemId : shoppingItem.$key });
+              this.navCtrl.push('EditShoppingListPage', { shoppingItemId : shoppingItem.$key });
           }
         },
         {

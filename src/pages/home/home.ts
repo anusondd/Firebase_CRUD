@@ -14,7 +14,7 @@ import { Profile } from '../../app/models/profile';
 })
 export class HomePage {
 
-  profileData : FirebaseObjectObservable<Profile>
+  //profileData : FirebaseObjectObservable<Profile>
   constructor(
     public navCtrl: NavController
   , public navParams: NavParams
@@ -26,10 +26,7 @@ export class HomePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
-    console.log('ionViewDidLoad ProfilesPage');
-    
-        console.log('ionViewDidLoad ShoppingListPage');
-        this.afAuth.authState.subscribe(data => {
+        /* this.afAuth.authState.subscribe(data => {
           console.log(data)
           if(data && data.email && data.uid){
               this.toast.create({
@@ -46,7 +43,7 @@ export class HomePage {
               }).present();
               this.navCtrl.setRoot(LoginPage);
             }
-        });
+        }); */
   }
 
 }

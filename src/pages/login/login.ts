@@ -23,6 +23,8 @@ export class LoginPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
+    this.user.email = 'anusondd@gmail.com';
+    this.user.password = '21519097';
   }
 
   async login(user: User){
@@ -31,7 +33,7 @@ export class LoginPage {
       const result = this.afAuth.auth.signInWithEmailAndPassword(user.email,user.password);
       console.log(result);
       if(result){
-        this.navCtrl.setRoot(HomePage);
+        this.navCtrl.setRoot('HomePage');
       }
     } catch (error) {
       console.error(error);

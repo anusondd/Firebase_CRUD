@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import {  NavController, NavParams } from 'ionic-angular';
+import { IonicPage,NavController, NavParams } from 'ionic-angular';
 import { AngularFireDatabase, FirebaseObjectObservable } from 'angularfire2/database';
 import { ShoppingItem } from '../../app/models/shopping-item.interface';
 import { Subscription } from 'rxjs/Subscription';
 
-
+@IonicPage()
 @Component({
   selector: 'page-edit-shopping-list',
   templateUrl: 'edit-shopping-list.html',

@@ -1,26 +1,24 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
-## How to use this template
+### วิธีการติดตั้งโปรเจคลงเครื่อง:
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
-
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
-
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
+เมื่อทำการ Clone โปรเจคลงเครื่องแล้ว
+อันดับแรกต้องติดตั้ง NodeJS 
+หลังจากนั้นทำการติดตั้ง Ionic และ cordova โดย Command Prompt 
 ```
-
-Then, to run it, cd into `myBlank` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+$ npm install -g ionic cordova
 ```
-
-Substitute ios for android if not on a Mac.
-
+จากนั้นเข้าไปยัง Folder โปรเจค แล้วใช้ Command Prompt 
+```
+$ npm install 
+```
+เมื่อเสร็จแล้วทำการรัน โดยใช้ Command Prompt 
+```
+$ ionic serve
+```
+หรือหากต้องการสร้างเป็น Android สามารถใช้ Command Prompt รันโค้ดดังนี้
+```
+$ npm install promise-polyfill --save-exact
+$ ionic cordova build android
+```
+เมื่อเสร็จแล้วเข้าไปที่ Folder    :โปรเจค\platforms\android\build\outputs\apk
+แล้วนำ ไฟล์ .apk ไปติดตั้งบน Android ได้เลย
